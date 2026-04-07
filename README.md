@@ -8,7 +8,7 @@ O **CryptoSimple** é um projeto de estudo desenvolvido em Java para praticar o 
 * **ID: RF01 - Consultar Preços:** O sistema busca o preço atualizado do Bitcoin (BTC) em Reais (BRL) via **AwesomeAPI**.
 * **ID: RF02 - Salvar Favorito:** O sistema permite salvar o preço atual capturado no banco de dados.
 * **ID: RF03 - Listar Histórico:** O sistema exibe os registros salvos no banco de dados MySQL.
-* **ID: RF04 - Excluir Registro:** O sistema permite que o usuário remova um item da sua lista de favoritos.
+
 
 ## 🛠️ Tecnologias Utilizadas
 * **Linguagem:** Java 17+ (JDK 23)
