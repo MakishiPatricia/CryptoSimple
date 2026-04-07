@@ -1,7 +1,6 @@
 Documentação do Projeto: CryptoSimple 
 
--Visão Geral
-O CryptoSimple é uma aplicação Java desenvolvida para auxiliar investidores de criptomoedas a monitorar preços em tempo real e organizar uma lista de ativos favoritos para acompanhamento de mercado.
+O CryptoSimple é um projeto de estudo desenvolvido em Java para praticar o consumo de APIs externas e a persistência de dados em bancos de dados relacionais (MySQL). A aplicação realiza a captura da cotação atual do Bitcoin e permite o armazenamento desses dados para consulta.
 
 -Requisitos Funcionais
 ID: RF01 - Consultar Preços
