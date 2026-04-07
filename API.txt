@@ -1,0 +1,9 @@
+https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=brl
+
+https://economia.awesomeapi.com.br/json/last/BTC-BRL
+
+
+
+
+
+
