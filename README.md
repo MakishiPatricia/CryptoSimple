@@ -1,51 +1,28 @@
-Documentação do Projeto: CryptoSimple 
+# 🪙 CryptoSimple
 
-O CryptoSimple é um projeto de estudo desenvolvido em Java para praticar o consumo de APIs externas e a persistência de dados em bancos de dados relacionais (MySQL). A aplicação realiza a captura da cotação atual do Bitcoin e permite o armazenamento desses dados para consulta.
+O **CryptoSimple** é um projeto de estudo desenvolvido em Java para praticar o consumo de APIs externas e a persistência de dados em bancos de dados relacionais (MySQL). A aplicação realiza a captura da cotação atual do Bitcoin e permite o armazenamento desses dados para consulta.
 
--Requisitos Funcionais
-ID: RF01 - Consultar Preços
-O sistema deve buscar o preço atualizado do Bitcoin (BTC) Reais (BRL) via API AwesomeAPI.
+---
 
-ID: RF02 - Salvar Favorito
-O usuário poderá escolher uma moeda e salvar o preço atual no banco de dados.
+## 🎯 Requisitos Funcionais
+* **ID: RF01 - Consultar Preços:** O sistema busca o preço atualizado do Bitcoin (BTC) em Reais (BRL) via **AwesomeAPI**.
+* **ID: RF02 - Salvar Favorito:** O sistema permite salvar o preço atual capturado no banco de dados.
+* **ID: RF03 - Listar Histórico:** O sistema exibe os registros salvos no banco de dados MySQL.
+* **ID: RF04 - Excluir Registro:** O sistema permite que o usuário remova um item da sua lista de favoritos.
 
-ID: RF03 - Listar Histórico
-O sistema deve exibir todos os registros salvos no banco de dados MySQL.
+## 🛠️ Tecnologias Utilizadas
+* **Linguagem:** Java 17+ (JDK 23)
+* **Biblioteca de JSON:** GSON da Google
+* **Banco de Dados:** MySQL 8.0
+* **Java HTTP Client:** Para realizar as requisições à API.
+* **JDBC:** Para a conexão e persistência com o banco de dados.
 
-ID: RF04 - Excluir Registro
+## 🗄️ Modelagem de Dados
+O sistema utiliza uma tabela chamada `favoritos`:
+* `id`: (INT, Primary Key, Auto-increment)
+* `nome_moeda`: (VARCHAR)
+* `preco_atual`: (DECIMAL 20,2)
+* `data_registro`: (TIMESTAMP)
 
-O sistema deve permitir que o usuário remova um item da sua lista de favoritos.
-
-- Requisitos Não Funcionais
-
-Linguagem: Java 17+.
-
-Banco de Dados: MySQL 8.0.
-
-API Externa: CoinGecko (REST API).
-
-Biblioteca de JSON: GSON da Google.
-
-IDE Recomendada: VS Code.
-
-Modelagem de Dados
-
-O sistema utilizará uma tabela única chamada favoritos:
-
-id (INT, Primary Key, Auto-increment)
-
-nome_moeda (VARCHAR)
-
-preco_brl (DECIMAL 18,2)
-
-data_registro (TIMESTAMP)
-
-
-- Tecnologias Utilizadas
-
-Java HTTP Client: Para realizar as requisições à API.
-
-JDBC: Para a conexão com o banco de dados.
-
-GSON: Para converter a resposta da API (JSON) em objetos Java.
-
+---
+*Projeto desenvolvido como parte do meu portfólio de estudos em Análise e Desenvolvimento de Sistemas (ADS).*
